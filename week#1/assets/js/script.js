@@ -6,3 +6,7 @@ $(window).scroll(function () {
     transform: "translate(0px, " + wScroll + "%)",
   });
 });
+
+$(window).on("load", function () {
+  $(".home").addClass("hMuncul");
+});
