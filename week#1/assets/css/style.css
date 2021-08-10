@@ -1,3 +1,7 @@
+html {
+  position: relative;
+}
+
 .home {
   opacity: 0;
   transition: 2s;
@@ -7,34 +11,54 @@
   opacity: 1;
 }
 
-.item1 {
-  grid-area: header;
-}
-.item2 {
-  grid-area: menu;
-}
-.item3 {
-  grid-area: main;
-}
-.item4 {
-  grid-area: right;
-}
-.item5 {
-  grid-area: footer;
+body {
+  margin: 0;
+  font-family: "Viga", sans-serif;
 }
 
-.grid-container {
-  display: grid;
-  grid-template-areas:
-    "header header header header header header"
-    "menu main main main right right"
-    "menu footer footer footer footer footer";
-  grid-gap: 10px;
-  padding: 10px;
+.header {
+  overflow: hidden;
+  background-color: transparent;
+  padding: 5px 10px;
+  margin: -10px -10px 0px -10px;
+  position: fixed;
+}
+
+.header a {
+  padding: 12px;
+  text-align: center;
+  text-decoration: none;
+  line-height: 15px;
+  font-weight: 600;
+  color: whitesmoke;
+  float: left;
+}
+
+.header a.logo {
+  color: whitesmoke;
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.header a.active {
+  color: whitesmoke;
+}
+
+.btn-head {
+  font-size: 15px;
+  margin: 2px 5px 0px 5px;
+  font-family: Arial;
+  width: 60px;
+  height: 12px;
+}
+
+.header-right {
+  float: right;
 }
 
 h1 {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Viga", sans-serif;
   text-align: center;
 }
 
@@ -42,7 +66,48 @@ img {
   width: 800px;
 }
 
-.btn a {
-  text-decoration: none;
-  color: black;
+@media (min-width: 992px) {
+  .item1 {
+    grid-area: header;
+  }
+  .item2 {
+    grid-area: menu;
+  }
+  .item3 {
+    grid-area: main;
+  }
+  .item4 {
+    grid-area: right;
+  }
+  .item5 {
+    grid-area: footer;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-areas:
+      "header header header header header header"
+      "menu main main main right right"
+      "menu footer footer footer footer footer";
+    grid-gap: 10px;
+    padding: 10px;
+  }
+
+  .landing {
+    background-image: url("../img/bg.jpg");
+    background-size: cover;
+    height: 780px;
+    background-position: 0 - 100px;
+    overflow: hidden;
+    margin: -10px -10px 0px -10px;
+    padding-top: 500px;
+  }
+
+  .btn-head:hover::after {
+    content: "";
+    display: block;
+    border-bottom: 2px solid rgb(255, 255, 255);
+    padding-bottom: 13px;
+    margin-bottom: -15px;
+  }
 }
