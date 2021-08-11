@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html id="home">
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Viga&display=swap" rel="stylesheet" />
@@ -12,10 +13,10 @@
       <div class="item1">
         <!-- header -->
         <div class="header">
-          <a href="#default" class="logo">Raymond PS</a></li>
+          <a href="#default" class="logo">RPS</a></li>
           <div class="header-right">
-            <a class="active btn-head" href="#home">Home</a></li>
-            <a href="#contact" class="btn-head">Contact</a></li>
+            <a class="btn-head" href="#home">Home</a></li>
+            <a href="#image" class="btn-head">Image</a></li>
             <a href="#about" class="btn-head">About</a></li>
           </div>
         </div>
@@ -23,23 +24,81 @@
 
         <!-- landing -->
         <div class="landing">
-          <div>
+          <div class="judul">
             <h1>Welcome</h1>
+          </div>
+          <div class="isinya">
+
           </div>
         </div>
         <!-- akhir landing -->
       </div>
       <div class="item2">
-        <button class="btn"><a href="#">Home</a></button>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit aut aliquam, placeat quae iure nostrum blanditiis eum aspernatur quisquam accusantium ipsam, pariatur odio quo suscipit voluptatem, tempore dolores soluta natus.</p>
       </div>
-      <div class="item3">
-        <img src="assets/img/bg-news.jpg" alt="" />
+      <div class="item3" id="image">
+        <div>
+          <div class="slideshow-container">
+            <div class="mySlides fade">
+              <img src="assets/img/th1.jpg" style="width: 100%" />
+              <div class="text">Caption Text</div>
+            </div>
+      
+            <div class="mySlides fade">
+              <img src="assets/img/th2.jpg" style="width: 100%" />
+              <div class="text">Caption Two</div>
+            </div>
+      
+            <div class="mySlides fade">
+              <img src="assets/img/th3.png" style="width: 100%" />
+              <div class="text">Caption Three</div>
+            </div>
+      
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+          <br />
+      
+          <div style="text-align: center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+          </div>
+        </div>
+        <div class="container-content">
+          <div></div>
+          <div class="card">
+            <img src="assets/img/1.jpg" alt="Avatar" style="width:100%">
+            <div class="container">
+              <h4><b>Raymond Putra Suntana</b></h4> 
+              <p>Sound Engineer</p> 
+            </div>
+          </div>
+          <div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi at ab architecto, ratione, iusto est deleniti voluptas nihil obcaecati error aperiam dicta explicabo quidem aspernatur tempore earum? Voluptatibus, ab sapiente!</p>
+          </div>
+          <div></div>
+        </div>
       </div>
-      <div class="item4">Right</div>
-      <div class="item5">Footer</div>
+      <div class="item4">
+        <div>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At fugit qui corporis! Velit assumenda voluptates modi, quae animi quas veritatis aliquam eos. Omnis animi iusto a consectetur cupiditate totam commodi?</p>
+        </div>
+      </div>
+      <div class="item5">
+        <footer>
+          <div class="container">
+                <p>&copy; copyright 2020 | <a href="http://instagram.com/raymond_ps_/">Raymond PS</a></p>
+                <span>
+                  <a href="https://www.youtube.com/channel/UCG-p_yiGQGsPRbkmkrjQyLg" class="btn-footer">Subscribe Youtube</a>
+                </span>
+          </div>
+        </footer>
+      </div>
     </div>
 
     <script src="assets/js/jquery-3.5.1.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
     <script src="assets/js/script.js"></script>
   </body>
 </html>
