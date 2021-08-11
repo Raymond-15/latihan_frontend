@@ -1,30 +1,15 @@
-// event pada saat link di klik
-$(".page-scroll").on("click", function (e) {
-  // ambil isi href
-  var tujuan = $(this).attr("href");
-  // tangkap elemen tujuan
-  var elemenTujuan = $(tujuan);
-
-  // pindahkan scroll
-  $("html , body").animate(
-    {
-      scrollTop: elemenTujuan.offset().top - 100,
-    },
-    1000,
-    "easeInOutQuint"
-  );
-
-  e.preventDefault();
-});
-
 // parallax landing
-// $(window).scroll(function () {
-//   var wScroll = $(this).scrollTop();
+$(window).scroll(function () {
+  var wScroll = $(this).scrollTop();
 
-//   $("h1").css({
-//     transform: "translate(0px, " + wScroll + "%)",
-//   });
-// });
+  $(".landing h1").css({
+    transform: "translate(0px, " + wScroll / 2 + "%)",
+  });
+
+  $(".landing p").css({
+    transform: "translate(0px, " + wScroll + "%)",
+  });
+});
 
 $(window).on("load", function () {
   $(".judul").addClass("judulMuncul");

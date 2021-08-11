@@ -7,10 +7,6 @@ html {
   transition: 2s;
 } */
 
-.hMuncul {
-  opacity: 1;
-}
-
 .item1 {
   grid-area: header;
 }
@@ -212,12 +208,79 @@ body {
   }
 }
 
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.74);
+  border-radius: 5px;
+}
+
+.con-card {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 99%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.3s ease;
+  background-color: rgba(0, 0, 0, 0.534);
+  border-radius: 5px;
+}
+
+.con-card:hover .overlay {
+  opacity: 1;
+}
+
+.icon {
+  color: white;
+  font-size: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container {
+  font-family: "Viga", sans-serif;
+  margin-left: 10px;
+  color: whitesmoke;
+}
+
+.desk {
+  background-color: rgba(0, 0, 0, 0.644);
+  color: white;
+  padding: 10px;
+}
+
 .btn-footer {
   text-decoration: none;
   background-color: rgba(255, 0, 0, 0.753);
   border-radius: 5px;
   color: white;
   padding: 5px;
+}
+
+.container-content {
+  background-image: url("../img/bg.jpg");
+  background-attachment: fixed;
+  background-size: contain;
 }
 
 @media (min-width: 992px) {
@@ -258,7 +321,6 @@ body {
     /* width: 1350px; */
     height: 700px;
     background-position: 0 - 100px;
-    overflow: hidden;
     margin: -10px -10px 0px -10px;
   }
 
@@ -275,7 +337,9 @@ body {
     margin-bottom: 220px;
     text-align: center;
     color: white;
+    font-family: "Vida", sans-serif;
     /* transform: translate(0px, 350px); */
+    transition: 2s;
   }
   .judulMuncul {
     opacity: 1;
@@ -292,12 +356,6 @@ body {
     grid-gap: 10px;
     padding: 10px;
   }
-  .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    transition: 0.3s;
-    width: 100%;
-    border-radius: 5px;
-  }
 
   .card:hover {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
@@ -305,10 +363,6 @@ body {
 
   .card img {
     border-radius: 5px 5px 0 0;
-  }
-  .container {
-    font-family: "Viga", sans-serif;
-    margin-left: 10px;
   }
 }
 
