@@ -1,0 +1,34 @@
+/* $PaleBlue: hsl(225, 100%, 94%);
+$BrightBlue: hsl(245, 75%, 52%);
+
+$VeryPaleBlue: hsl(225, 100%, 98%);
+$DesaturatedBlue: hsl(224, 23%, 55%);
+$DarkBSlue: hsl(223, 47%, 23%); */
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+}
+
+main {
+  margin-top: 50px;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card {
+  border-radius: 20px;
+}
+
+.card-body {
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
+.card img {
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+}
+.card-title {
+  font-weight: 700;
+}
