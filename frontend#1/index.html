@@ -13,8 +13,6 @@
     <link rel="stylesheet" href="style.css" />
 
     <title>Frontend Mentor | Order summary card</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   </head>
   <body>
     <main class="d-flex justify-content-center">
@@ -24,29 +22,31 @@
           <h3 class="card-title">Order Summary</h3>
           <p class="card-text text-secondary">You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!</p>
 
-          <div class="row d-flex align-items-center">
+          <div class="row d-flex align-items-center" id="mid">
             <div class="col-2">
               <img src="images/icon-music.svg" alt="" />
             </div>
+
             <div class="col-6 pt-3">
-              <p>Annual Plan <span>$59.99/year</span></p>
+              <p id="plan">Annual Plan <span class="text-secondary">$59.99/year</span></p>
             </div>
+
             <div class="col-4">
-              <a href="" class="">Change</a>
+              <a href="" class="change">Change</a>
             </div>
           </div>
 
-          <div class="row">
-            <a href="#" class="btn btn-primary form-group">Proce ed to Payment</a>
+          <div class="row mt-4">
+            <a href="#" class="btn form-group" id="proceed">Proceed to Payment</a>
           </div>
           <div class="row">
-            <a href="#" class="btn btn-light form-group">Cancel Order</a>
+            <a href="#" class="btn form-group text-secondary" id="cancel">Cancel Order</a>
           </div>
         </div>
       </div>
     </main>
 
-    <div class="attribution">Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Raymond PS</a>.</div>
+    <div class="attribution">Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="https://www.instagram.com/raymond_ps_/">Raymond PS</a>.</div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
