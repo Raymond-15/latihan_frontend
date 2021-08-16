@@ -236,3 +236,103 @@ header {
   position: relative;
   flex: 1 1 220px;
 }
+
+.quote {
+  position: absolute;
+  top: 60%;
+  left: 25%;
+  text-align: center;
+  font-family: "Fraunces", serif;
+}
+
+.quote.cherry {
+  color: var(--Dark-desaturated-cyan-text);
+}
+
+.quote.orange {
+  color: var(--Dark-blue-photography-text);
+}
+
+.quote p {
+  max-width: 340px;
+  font-size: 0.9em;
+  line-height: 1.5;
+  margin: 20px 0;
+  font-weight: 600;
+}
+
+.client {
+  width: 100%;
+}
+
+.client-container {
+  max-width: 968px;
+  margin: 0 auto;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.client-container h2 {
+  text-transform: uppercase;
+  font-family: "Fraunces", serif;
+  color: var(--Dark-grayish-blue);
+  letter-spacing: 2px;
+  font-size: 1.5em;
+  padding: 20px 0;
+}
+
+.client-ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.client-ul li {
+  flex: 1 1 260px;
+  padding: 10px;
+}
+
+.client-ul .client-img {
+  width: 80px;
+  height: 80px;
+  margin: 50px auto 0;
+  border-radius: 50%;
+}
+
+.client-ul .client-img img {
+  border-radius: 50%;
+}
+
+.client-ul li blockquote {
+  display: block;
+  max-width: 300px;
+  font-size: 0.9em;
+  line-height: 1.5;
+  margin: 0 auto;
+  padding: 40px 0px;
+  color: var(--Very-dark-desaturated-blue);
+}
+
+.client-ul li cite {
+  display: block;
+  font-weight: bold;
+  padding: 40px 0 10px;
+  font-family: "Fraunces", serif;
+}
+
+.client-ul li small {
+  color: var(--Dark-grayish-blue);
+}
+
+.portfolio {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.portfolio-img {
+  flex: 1 1 160px;
+}
+
+.portfolio-img img {
+  object-fit: contain;
+}
