@@ -1,4 +1,12 @@
+.nav-link {
+  margin-top: 5px;
+  font-size: 14px;
+  font-family: "Barlow", sans-serif;
+  color: hsl(0, 0%, 100%);
+}
+
 .kontak {
+  margin-top: 5px;
   padding-top: 10px;
   height: 40px;
   width: 100px;
@@ -26,5 +34,6 @@
 .jumbotron h1 {
   font-family: "Fraunces", serif;
   color: white;
+  font-weight: 700;
   /* margin-top: 100px; */
 }
