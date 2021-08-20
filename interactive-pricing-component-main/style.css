@@ -212,7 +212,7 @@ input[type="range"]::-moz-range-track {
   height: 0;
 }
 
-.deslizar {
+.slide {
   position: absolute;
   cursor: pointer;
   top: 0;
@@ -224,7 +224,7 @@ input[type="range"]::-moz-range-track {
   transition: 0.4s;
 }
 
-.deslizar:before {
+.slide:before {
   position: absolute;
   content: "";
   height: 19px;
@@ -236,30 +236,30 @@ input[type="range"]::-moz-range-track {
   transition: 0.4s;
 }
 
-.toggle:checked + .deslizar {
+.toggle:checked + .slide {
   background-color: hsl(174, 86%, 45%);
 }
 
-.toggle + .deslizar:hover {
+.toggle + .slide:hover {
   background-color: hsl(174, 77%, 80%);
 }
 
-.toggle:focus + .deslizar {
+.toggle:focus + .slide {
   box-shadow: 0 0 1px #2196f3;
 }
 
-.toggle:checked + .deslizar:before {
+.toggle:checked + .slide:before {
   -webkit-transform: translateX(31px);
   -ms-transform: translateX(31px);
   transform: translateX(31px);
 }
 
 /* Rounded sliders */
-.deslizar.round {
+.slide.round {
   border-radius: 34px;
 }
 
-.deslizar.round:before {
+.slide.round:before {
   border-radius: 50%;
 }
 
@@ -267,7 +267,7 @@ input[type="range"]::-moz-range-track {
   position: relative;
 }
 
-.descount {
+.discount {
   position: absolute;
   max-width: 150px;
   background-color: hsl(14, 92%, 95%);
@@ -290,7 +290,7 @@ input[type="range"]::-moz-range-track {
   font-size: 1em;
 }
 
-.beficios {
+.benefit {
   border-top: solid 1px hsl(0, 0%, 80%);
   width: 100%;
   display: flex;
