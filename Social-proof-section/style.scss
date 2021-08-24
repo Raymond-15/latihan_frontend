@@ -1,0 +1,180 @@
+$VeryDarkMagenta: hsl(300, 43%, 22%);
+$SoftPink: hsl(333, 80%, 67%);
+
+$DarkGrayishMagenta: hsl(303, 10%, 53%);
+$LightGrayishMagenta: hsl(300, 24%, 96%);
+$White: hsl(0, 0%, 100%);
+
+body {
+  background-image: url("images/bg-pattern-top-mobile.svg");
+  background-repeat: no-repeat;
+  margin: 30px;
+  color: $VeryDarkMagenta;
+  font-family: "Spartan", sans-serif;
+
+  .top {
+    margin-top: 80px;
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 40px;
+    line-height: 1;
+  }
+
+  .top h1 {
+    font-weight: 700;
+  }
+
+  .top p {
+    color: $DarkGrayishMagenta;
+    font-weight: 500;
+    line-height: 1.5;
+    font-size: 13px;
+  }
+
+  .ratings img {
+    width: 20px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+
+  .ratings {
+    text-align: center;
+    background-color: $LightGrayishMagenta;
+    border-radius: 10px;
+    font-size: 13px;
+    h4 {
+      margin-top: 0;
+      padding-top: 8px;
+      padding-bottom: 20px;
+    }
+  }
+
+  .middle {
+    margin-bottom: 40px;
+  }
+
+  .image {
+    float: left;
+    margin-right: 20px;
+  }
+
+  img {
+    border-radius: 50%;
+    width: 45px;
+    margin-top: 10px;
+  }
+
+  .profile {
+    color: $White;
+    background-color: $DarkGrayishMagenta;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    font-size: 13px;
+    h4 {
+      padding-top: 0;
+      margin-bottom: 2px;
+      font-size: 13px;
+    }
+
+    p {
+      font-weight: lighter;
+      color: $LightGrayishMagenta;
+      margin-top: 30px;
+      line-height: 1.7;
+      font-size: 12.5px;
+    }
+    p1 {
+      padding-top: 0;
+      margin-top: 0;
+      line-height: 1.7;
+      color: $SoftPink;
+      font-size: 12px;
+      font-weight: lighter;
+    }
+  }
+  .box {
+    background-image: url("images/bg-pattern-bottom-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: right;
+  }
+}
+
+@media screen and (min-width: 920px) {
+  body {
+    background-image: url("images/bg-pattern-top-desktop.svg");
+    background-repeat: no-repeat;
+    margin: 0 0 10px 150px;
+    padding-right: 0;
+  }
+  .container {
+    margin-right: 150px;
+  }
+  .box {
+    background-image: url("images/bg-pattern-bottom-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: right;
+
+    width: 100%;
+  }
+  .top-container {
+    display: flex;
+  }
+  .top {
+    width: 320px;
+    text-align: left;
+  }
+  .top p {
+    width: 350px;
+  }
+  .middle img {
+    float: left;
+  }
+  .ratings h4 {
+    width: 350px;
+    padding-right: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .bottom {
+    display: flex;
+  }
+  .profile {
+    margin-right: 10px;
+  }
+  .middle {
+    margin-top: 100px;
+    margin-left: 260px;
+  }
+  #review {
+    position: relative;
+    right: 40px;
+    padding-left: 30px;
+  }
+  #report {
+    position: relative;
+    left: 10px;
+    padding-left: 30px;
+  }
+  #best {
+    position: relative;
+    left: 60px;
+    padding-left: 30px;
+    margin-right: 10px;
+  }
+  #colton {
+    margin-right: 20px;
+  }
+  #irene {
+    position: relative;
+    top: 20px;
+    margin-right: 20px;
+  }
+  #anne {
+    position: relative;
+    top: 40px;
+  }
+  .attribution {
+    margin-top: 30px;
+  }
+}
