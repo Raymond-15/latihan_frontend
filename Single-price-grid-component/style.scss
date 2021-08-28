@@ -1,0 +1,114 @@
+$Cyan: hsl(179, 62%, 43%);
+$Bright-Yellow: hsl(71, 73%, 54%);
+
+$Light-Gray: hsl(204, 43%, 93%);
+$Grayish-Blue: hsl(218, 22%, 67%);
+
+body {
+  font-family: "Karla", sans-serif;
+  font-size: 16px;
+
+  p {
+    padding: 0;
+    margin: 0;
+  }
+
+  .container {
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: $Light-Gray;
+  }
+
+  .component {
+    border-radius: 10px;
+    background-color: #fff;
+
+    h2 {
+      color: $Cyan;
+    }
+
+    h3 {
+      color: $Bright-Yellow;
+    }
+
+    p {
+      font-size: 14px;
+      color: $Grayish-Blue;
+    }
+  }
+
+  .bottom {
+    display: flex;
+    color: $Light-Gray;
+
+    p {
+      color: $Light-Gray;
+    }
+  }
+
+  .community,
+  .subscription,
+  .why-us {
+    padding: 25px 50px;
+  }
+  .subscription,
+  .why-us {
+    width: 50%;
+  }
+  .subscription {
+    border-bottom-left-radius: 5px;
+    background-color: $Cyan;
+
+    h2 {
+      color: $Light-Gray;
+    }
+  }
+
+  .why-us {
+    border-bottom-right-radius: 5px;
+    h2 {
+      color: $Light-Gray;
+    }
+    p {
+      margin-top: 2px;
+      margin-bottom: 2px;
+    }
+  }
+  .subscription h2,
+  .why-us h2 {
+    font-size: 18px;
+    font-weight: 700;
+  }
+  .subscription .price {
+    display: flex;
+    align-items: center;
+  }
+  .subscription .price strong {
+    font-weight: 700;
+    font-size: 30px;
+    margin-right: 10px;
+    color: white;
+  }
+  .subscription .sign-up {
+    background-color: $Bright-Yellow;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    color: $Light-Gray;
+    margin-top: 25px;
+  }
+  .why-us {
+    background-color: #4abebd;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .bottom {
+    flex-direction: column;
+    align-items: center;
+  }
+}

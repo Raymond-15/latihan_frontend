@@ -1,0 +1,135 @@
+body {
+  font-family: "Karla", sans-serif;
+  font-size: 16px;
+}
+
+body p {
+  padding: 0;
+  margin: 0;
+}
+
+body .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #e5eff5;
+}
+
+body .component {
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+body .component h2 {
+  color: #2ab2af;
+}
+
+body .component h3 {
+  color: #c0df34;
+}
+
+body .component p {
+  font-size: 14px;
+  color: #98a6bd;
+}
+
+body .bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #e5eff5;
+}
+
+body .bottom p {
+  color: #e5eff5;
+}
+
+body .community,
+body .subscription,
+body .why-us {
+  padding: 25px 50px;
+}
+
+body .subscription,
+body .why-us {
+  width: 50%;
+}
+
+body .subscription {
+  border-bottom-left-radius: 5px;
+  background-color: #2ab2af;
+}
+
+body .subscription h2 {
+  color: #e5eff5;
+}
+
+body .why-us {
+  border-bottom-right-radius: 5px;
+}
+
+body .why-us h2 {
+  color: #e5eff5;
+}
+
+body .why-us p {
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+body .subscription h2,
+body .why-us h2 {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+body .subscription .price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .subscription .price strong {
+  font-weight: 700;
+  font-size: 30px;
+  margin-right: 10px;
+  color: white;
+}
+
+body .subscription .sign-up {
+  background-color: #c0df34;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  color: #e5eff5;
+  margin-top: 25px;
+}
+
+body .why-us {
+  background-color: #4abebd;
+}
+
+@media screen and (max-width: 700px) {
+  .bottom {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+/*# sourceMappingURL=style.css.map */
