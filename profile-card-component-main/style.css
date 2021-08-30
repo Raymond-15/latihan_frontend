@@ -1,0 +1,135 @@
+:root {
+  --darkCyan: hsl(185, 75%, 39%);
+  --veryDarkDesaturatedBlue: hsl(229, 23%, 23%);
+  --darkGrayishBlue: hsl(227, 10%, 46%);
+
+  --darkGray: hsl(0, 0%, 59%);
+}
+
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: "Kumbh Sans", sans-serif;
+  overflow: hidden;
+}
+
+body {
+  background-color: var(--darkCyan);
+}
+
+.background {
+  height: 100vh;
+  position: relative;
+  background-position: center;
+}
+
+.top {
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  transform: translate(-50%, -50%);
+}
+
+.bottom {
+  position: absolute;
+  top: 100%;
+  left: 95%;
+  transform: translate(-50%, -50%);
+}
+
+.card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  box-shadow: 0 0 100px rgba(0, 0, 0, 0.329);
+  width: 340px;
+  height: 370px;
+  border-radius: 20px;
+  transition: all 0.8s;
+  user-select: none;
+}
+
+.card-img img {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.profile-pic img {
+  position: absolute;
+  top: 33%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  border: 5px solid white;
+}
+
+.card-texts {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  margin-top: 30px;
+}
+
+.card-texts h1 {
+  font-size: 1.3rem;
+  color: var(--veryDarkDesaturatedBlue);
+}
+
+.card-texts span {
+  font-weight: 100;
+  color: var(--darkGray);
+}
+
+.card-texts p {
+  color: var(--darkGray);
+  margin-top: 10px;
+}
+
+.stats {
+  display: flex;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-top: 0.5px solid var(--darkGray);
+  padding: 1px 100px;
+  margin-top: 10px;
+}
+
+.stats-item {
+  margin-left: 30px;
+  margin-right: 35px;
+  margin-top: 40px;
+  text-align: center;
+}
+
+.stats-item h1 {
+  font-size: 1.2rem;
+  color: var(--veryDarkDesaturatedBlue);
+}
+
+.stats-item p {
+  color: var(--darkGray);
+  font-size: 0.7rem;
+}
+
+.card:hover {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -55%);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  text-decoration: none;
+  color: hsl(228, 45%, 44%);
+}
